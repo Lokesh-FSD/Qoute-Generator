@@ -4,7 +4,10 @@ function Greeting() {
     let today = new Date();
     let hourNow = today.getHours();
 
-    if (hourNow >= 16) {
+    if (hourNow >= 20) {
+        Greeting = "lets start our night with a New Qoute";
+    }
+    else if (hourNow >= 16) {
         Greeting = "lets start our Evening with a New Qoute";
     }
     else if (hourNow >= 12) {
@@ -14,7 +17,7 @@ function Greeting() {
         Greeting = "lets start our Morning with a New Qoute";
     }
     else {
-        Greeting = "night";
+        Greeting = "day";
     }
     return Greeting;
 }
